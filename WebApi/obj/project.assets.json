@@ -88,6 +88,16 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "NNK.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/NNK.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NNK.Services.dll": {}
+        }
       }
     }
   },
@@ -216,10 +226,16 @@
         "swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "NNK.Services/1.0.0": {
+      "type": "project",
+      "path": "../NNK.Services/NNK.Services.csproj",
+      "msbuildProject": "../NNK.Services/NNK.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "NNK.Services >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
@@ -247,7 +263,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/home/nvs/Projects/NNK-Project/NNK-Project/NNK.Services/NNK.Services.csproj": {
+              "projectPath": "/home/nvs/Projects/NNK-Project/NNK-Project/NNK.Services/NNK.Services.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
